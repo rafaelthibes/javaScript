@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/calculadora.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javaScript/js.js" defer></script>
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora IMC</h1>
+    </header>
+    <main>
+        <img src="imagens/calculator-g84f4f6e94_1920.jpg" alt="calculadora IMC">
+        <section>
+            <h2>Cálculo IMC</h1>
+            <p>
+                IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
+            </p>
+            <p>
+                O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+            </p>
+            <p>
+                Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
+            </p>
+            <div id="calculadora">
+                <label for="Altura">Altura (ex.:1,70)</label><br>
+                <input type="number" name="metros" id="metros"><br>
+                <label for="Peso">Peso (ex.:71,5)</label><br>
+                <input type="number" name="kilos" id="kilos"><br>
+                <input type="button" value="Calcular" id="calcular">
+                <br>
+                <input type="button" value="Zerar" id="zerar">
+                <br>
+                <span>Seu IMC: </span>
+                <span id="imc"></span>
+            </div>
+
+            <h2 id="titTab">Veja a interpretação do IMC</h2>
+            <table>
+                <tr id="tit">
+                    <td>IMC</td>
+                    <td>Classificação</td>
+                    <td>Obesidade</td>
+                </tr>
+                <tr id="imc1">
+                    <td>Menor que 18,5</td>
+                    <td>Magreza</td>
+                    <td>0</td>
+                </tr>
+                <tr id="imc2">
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Normal</td>
+                    <td>0</td>
+                </tr>
+                <tr id="imc3">
+                    <td>Entre 25,0 e 29,9</td>
+                    <td>Sobrepeso</td>
+                    <td>I</td>
+                </tr>
+                <tr id="imc4">
+                    <td>Entre 30,0 e 39,9 </td>
+                    <td>Obesidade</td>
+                    <td>II</td>
+                </tr>
+                <tr id="imc5">
+                    <td>Maior que 40,0</td>
+                    <td>Obesidade Grave</td>
+                    <td>III</td>
+                </tr>
+            </table>
+
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/e5OuLSDayxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        </section>        
+    </main>
+    <footer>
+        <p>Cálculo IMC</p>
+    </footer>
+    
+</body>
+</html>
